@@ -10,7 +10,6 @@ body {
   margin: auto;
 }
 
-// logotipi popravit' 
 // Header
 .header {
   max-height: 250px;
@@ -390,6 +389,7 @@ body {
       }
 
       & a {
+        color: black;
         text-align: center;
         width: 170px;
         text-decoration: none;
@@ -429,6 +429,7 @@ body {
         justify-content: right;
         text-decoration: none;
         width: 181px;
+        color: #828282;
 
       }
     }

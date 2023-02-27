@@ -422,6 +422,7 @@ body {
   letter-spacing: 0em;
 }
 .footer__top-phone a {
+  color: black;
   text-align: center;
   width: 170px;
   text-decoration: none;
@@ -461,4 +462,5 @@ body {
           justify-content: right;
   text-decoration: none;
   width: 181px;
+  color: #828282;
 }
