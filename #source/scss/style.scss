@@ -1,0 +1,436 @@
+body {
+  margin: 0;
+  font-family: Roboto;
+}
+
+.container {
+  max-width: 1110px;
+  justify-content: center;
+  display: block;
+  margin: auto;
+}
+
+// logotipi popravit' 
+// Header
+.header {
+  max-height: 250px;
+
+  & ul {
+    display: flex;
+    justify-content: center;
+    max-height: 17px;
+    margin: 0;
+  }
+
+  & li {
+    list-style: none;
+    display: inline-block;
+    padding: 17px 15px;
+
+    & a {
+      text-decoration: none;
+      color: #333333;
+
+      &:hover {
+        color: #66C05D;
+      }
+    }
+  }
+
+  &__top {
+    background-color: #E5E5E5;
+    height: 50px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0em;
+    font-weight: 400;
+  }
+
+  &__middle {
+    margin-top: 20px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid #EFEFEF;
+
+    &-logo_name {
+      display: flex;
+
+      & span {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 42px;
+        letter-spacing: 0.1em;
+        text-align: center;
+        margin: 21px 0 21px 20px;
+        color: #66C05D;
+      }
+    }
+
+    &-phone {
+      display: flex;
+      justify-content: right;
+      text-align: center;
+      margin: 21px 0;
+
+      & p {
+        display: flex;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-top: 10px;
+        margin-right: 20px;
+      }
+
+      &-button {
+        padding-top: 10px;
+        width: 170px;
+        height: 28px;
+        text-decoration: none;
+        display: inline-block;
+        background: white;
+        justify-content: center;
+        border-radius: 40px;
+        border: 2px solid #66C05D;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+      }
+    }
+  }
+
+  &__bottom {
+    height: 20px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+
+    & li {
+      padding-right: 25px;
+    }
+  }
+}
+
+// Sale
+.sale {
+  background-color: #66C05D;
+  height: 605px;
+
+  & .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__description {
+    width: 308px;
+    padding-top: 192px;
+    margin-left: 70px;
+
+    & span {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 56px;
+      letter-spacing: 0em;
+      color: white;
+    }
+
+    & p {
+      max-width: 308px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0em;
+      color: white;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    &-button {
+
+      text-decoration: none;
+      padding: 10px 44px;
+      background: #66C05D;
+      border: 2px solid #FFFFFF;
+      border-radius: 40px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      color: #FFFFFF;
+    }
+  }
+
+  & __image {
+    margin-left: 12px;
+  }
+}
+
+// goods
+.goods {
+  background-color: #EFEFEF;
+  padding-bottom: 132px;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 45px;
+  }
+
+  &__items {
+    padding-top: 38px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    &-item {
+      Width: 255px;
+      Height: 363px;
+      background-color: white;
+      text-align: center;
+      justify-content: center;
+
+      &-description {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        margin-left: 30px;
+        max-width: 195px;
+      }
+
+      &-price {
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 25px;
+        letter-spacing: 0.05em;
+      }
+
+      & img {
+        padding-left: 65px;
+        padding-top: 25px;
+        width: 125px;
+        height: 166px;
+        display: flex;
+      }
+
+      & a {
+        text-decoration: none;
+        display: inline-block;
+        border-width: 0;
+        color: white;
+        width: 130px;
+        padding-top: 10px;
+        height: 28px;
+        background: #66C05D;
+        border-radius: 30px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.05em;
+      }
+    }
+  }
+
+  &__adv {
+    padding-top: 100px;
+    height: 212px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &-email {
+      color: white;
+      width: 540px;
+      background: #66C05D;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      &-title {
+        margin-left: 30px;
+        margin-top: 35px;
+        margin-bottom: 0;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+        letter-spacing: 0em;
+        width: 250px;
+      }
+
+      &-text {
+        margin-left: 30px;
+        margin-top: 25px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        width: 231px;
+      }
+
+      &-input {
+        margin-left: 30px;
+        margin-top: 25px;
+        width: 225px;
+        height: 35px;
+        background: #FFFFFF;
+        border-radius: 30px;
+        border-width: 0;
+        &::placeholder{
+          padding-right: 80px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          text-align: center;
+          color: #C4C4C4;
+        }
+      }
+
+      &-svg {
+        padding-top: 36px;
+        text-align: right;
+        padding-right: 55px;
+      }
+    }
+
+    &-map {
+      width: 540px;
+      background: #66C05D;
+      color: white;
+
+      &-title {
+        margin-left: 40px;
+        margin-top: 35px;
+        margin-bottom: 0;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+        letter-spacing: 0em;
+        width: 250px;
+      }
+
+      &-text {
+        margin-left: 40px;
+        margin-top: 25px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        width: 141px;
+        margin-bottom: 34px;
+      }
+
+      &-btn {
+        text-decoration: none;
+        color: white;
+        padding: 7px 27px;
+        border: 2px solid rgba(255, 255, 255, 1);
+        border-radius: 30px;
+        margin-left: 40px;
+        margin-top: 25px;
+        background: #66C05D;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  }
+}
+
+// footer
+.footer {
+  &__top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 37px;
+    padding-bottom: 37px;
+    align-items: center;
+
+    &-links {
+      & a {
+        margin-right: 20px;
+        text-decoration: 0;
+      }
+    }
+
+    &-address {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0em;
+      //padding-top: 20px;
+      text-align: center;
+    }
+
+    &-phone {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+
+      & p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+      }
+
+      & a {
+        text-align: center;
+        width: 170px;
+        text-decoration: none;
+        padding: 7px;
+        display: inline-block;
+        font-size: 14px;
+        line-height: 16px;
+        background: #FFFFFF;
+        border: 2px solid #66C05D;
+        border-radius: 40px;
+      }
+    }
+  }
+
+  &__bottom {
+    background: #EFEFEF;
+    height: 64px;
+
+    &-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14px;
+      letter-spacing: 0em;
+
+      & p {
+        margin: 0;
+        padding-top: 25px;
+        width: 584px;
+        color: #828282;
+      }
+
+      & a {
+        margin-left: 345px;
+        padding-top: 25px;
+        justify-content: right;
+        text-decoration: none;
+        width: 181px;
+
+      }
+    }
+  }
+}
